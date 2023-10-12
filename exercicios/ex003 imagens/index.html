@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--lingua do site-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste com Imagens</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tourney:wght@700&display=swap');
+
+body {background-image: linear-gradient(to right, #2E56A6, #2e56a65b);
+
+font-family: 'Tourney', cursive;
+font-size: 2em;
+color: black;
+
+}
+h1 {text-align: center; color: #B14136; text-shadow: 5px 5px 10px #fe5c4d;
+    font-family: 'Tourney', cursive;
+}
+
+div > p {display: none;}
+div:hover > p {display: block;}
+
+
+</style>
+
+
+   
+        <link rel="shortcut icon" href="rocket.png" type="image/x-icon">
+       
+
+
+</head>
+<body>
+    <h1>testando carga e imagens</h1> <!--esse é o titulo-->
+<p>Abaixo você vai ver uma imagem que esta na mesma pasta</p>
+<img src="200downloadht.png" alt="logo html5">
+<img src="200imagescss.png" alt="logocss"> <!--img para colocar imagens-->
+<p>Podemos também carregar imagens que estão em sub-pastas</p>
+
+<picture>
+
+
+
+    <source media="(max-width: 750px )" srcset="pastinha/300.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="pastinha/700.png" type="image/png">
+<div><img src="pastinha/1000.png" alt="imagem flexível">
+    <p><img src="pastinha/208192935-guardians-of-the-galaxy.webp" alt="guardioes"></p>
+   
+
+</div>                    
+
+</picture>
+<source media="(min-width: 700px )" srcset="" type="image/">
+<source media="(max-width: 750px)" srcset="imagens/300.png">
+<source media="(max-width: 1050px)" srcset="imagens/700.png">
+
+
+
+
+
+
+<p>.Tambem podemos carregar imagens externas</p>
+<img src="https://camo.githubusercontent.com/4df4cf6995f81a77c935c858564a894f16b8e242ef5bbe01d1ca2f40d5991d85/68747470733a2f2f7777772e616e6b69747765626c6f6769632e636f6d2f6a6176617363726970742f6a735f696d672f6a6176617363726970742e706e67" alt="logo javascript"> <!--consegue pegando o endereço da imagem -->
+
+    
+</body>
+</html>

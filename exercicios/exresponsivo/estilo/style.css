@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martian+Mono:wght@200&family=Rubik&family=Secular+One&family=Tourney:wght@700&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url('../fontes/idroid.otf'); /*pra conseguir usar a fonte estando em pacote use ..*/
+    font-weight: normal; 
+}
+
+/*usa :root para decidir os padrao de cores e fontes que ira usar */
+:root {
+    --cor0: #14ffeb46;
+    --cor1: #00F5E0;
+    --cor2: #01DBC8;
+    --cor3: #00B5A6;
+    --cor4: #00756C;
+    --cor5: #003631;
+    --corbranca: white;
+    --corpreta: black;
+
+
+    --fonte-android: Android, Cursive;
+    --fonte-padrao: arial, verdana, helvetica, sans-serif
+    --fonte-android: Android, Cursive;
+    --fonte-detaque: 'Bebas Neue', sans-serif;
+   
+
+    }
+
+    *{
+margin: 0px;
+padding: 0px;
+
+    }
+
+
+body {background-color: var(--cor0);
+font-family: var(--fonte-padrao);
+
+}
+
+header {background-color: var(--cor4);
+margin: none;}
+
+header > h1 {color: var(--corbranca);
+    font-family: var(--fonte-detaque);
+}
+header > p {color: var(--corbranca);}
+
+nav {background-color: var(--cor5);}
+
+main {background-color: var(--corbranca);
+}
+
+main h1 {color: var(--corpreta);
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+
+}
+
+main h2 {font-family: var(--fonte-android);
+color: var(--cor5);}
+
+footer {background-color: var(--cor5);
+    color: var(--corbranca);
+}
+
+
+

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tourney:wght@700&display=swap');
+
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right, #96861b, #a25d3f, #c18e20, #ad6104);
+    font-family: 'Pacifico', cursive;
+    
+
+}
+h1 {color: #40290D;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    text-align: center;  /* isso da pra centralizar o texto */
+    text-align: justify;  /* isso da pra ajeita o texto */
+}
+div > p {display: none;}
+div:hover > p {display: block;}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas em HTML5</title>
+<style>
+    *{right: 100%;}
+body {background-image: linear-gradient(to bottom, #25B8E0, #1C52ED );
+background-attachment: fixed;
+
+}
+
+</style>
+
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tentar abrir esse site em varios dispositivos diferentes ou simplesmentes aumente o tamanho do seu navegador </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/p.png"> <!--essa é a forma do isuario poder mexer no seu site de diversos aparelhos use a tag source media, coloque o tamanho da sua imagem menor que vc tenha, sempre o menor source tem que ficar em cima -->
+        <source media="(max-width: 1050px)" srcset="Imagens/m.png">
+<img src="Imagens/g.png" alt="Imagem flexível">
+
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+<audio src="midia/Black - Young Buck Feat.50 Cent-Let ME in.mp3" controls autoplay></audio><!-- esse é o jeito mais simples de colocar usar a tag audio + controls + aultoplay-->
+<h1>O jeito de fazer pegar em diversos navegadores</h1>
+
+<audio preload="metadata" autoplay controls loop >  
+    <source src="midia/Black - Young Buck Feat.50 Cent-Let ME in.mp3" type="audio/mpeg">
+    <source src="midia/carr.ogg" type="audio/ogg">
+    <source src="midia/carr.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir o áudio <a href="midia/carr.mp3"> Clique aqui para baixar o arquivo</a></p>
+    <!--A outra forma seria essa sempre priorizando mp3 e ogg quanto melhor for o formato mais em cima deve ficar-->
+
+</audio>
+    
+</body>
+</html>

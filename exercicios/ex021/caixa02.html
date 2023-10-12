@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+<link rel="shortcut icon" href="*" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(209, 140, 255, 0.315);
+            margin: 0%;
+        }
+
+
+        header {
+        background-color: white;
+        padding: 8px;
+        margin: 8px; 
+        
+    
+    }
+
+
+        nav {
+            background-color: rgba(186, 113, 255, 0.644);
+            padding: 4px;
+            box-shadow: 2px 2px 2px 2px rgba(61, 36, 83, 0.39);
+            border-radius: 5px 0px;
+        }
+
+         
+            
+
+    
+
+      
+
+        main {
+            background-color: white;
+            padding: 8px;
+            margin: 8px;
+            border-radius: 16px 0px;
+            box-shadow: 2px 2px 2px 2px rgba(61, 36, 83, 0.39);
+
+         }
+
+        article { background-color: rgba(186, 113, 255, 0.329);
+        padding: 4px;}
+
+
+
+        article > aside { background-color: rgba(186, 113, 255, 0.329);}
+
+        footer { background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+         
+        }
+
+        footer > p {margin: 0px;}
+
+        h2 {}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!-- tag nav meunu dentro do baçalho-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+    <main> <!--main significa conteudo principal do site-->
+         <section id="assuntos">  <!--marca sessoes de conteudo na pagina-->
+            <p>Esportes Política Tecnologia</p>
+
+         </section>    
+         <section id="noticias">
+            <article>
+                <h2>Notícias sobre o brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, recusandae sint enim, blanditiis magni esse accusamus, asperiores temporibus suscipit sequi quam similique deleniti modi ipsam possimus consequatur aperiam accusantium autem.</p>
+                <aside>
+                    <p>Artigo escrito por jose da silva</p>
+                </aside>
+
+
+            </article>
+            <article>
+
+            </article>
+        
+         </section>
+    </main>
+    <footer> <!-- footer é o rodapé do site-->
+        <p>desenvolvido pelo cursoemvideo</p>
+
+    </footer>
+</body>
+</html>

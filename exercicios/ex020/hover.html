@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+div > p {display: none;}    /* esse > dapois da div faz esse tag usar so o paragrafo dentro da div*/
+
+div:hover > p {display: block;  /*display bloque faz aparecer depois do display none deixar ivisivel */
+color: brown;
+background-color: black;
+width: 300px;}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto aberto</p>
+    <div>
+        passe o mouse aqui
+        <p>Descupa meu Bombom </p>
+
+    </div>    
+</body>
+</html>

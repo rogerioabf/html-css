@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body { background-color: #8EE8E5;
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 13px;
+font-weight: lighter;
+}
+
+h1{font-family: 'Times New Roman', Times, serif; color: #5F9C9A;
+font-size: 2em;}
+
+h1#principal {text-align: center;
+font-size: 3 em;
+font-family: Arial, Helvetica, sans-serif
+;font-style: italic; color: #385C5B;}
+
+h2 { font-family: 'Times New Roman', Times, serif; color: #76C2BF;
+font-size: 1,5em;}
+
+.aprendendo {font-family: Arial, Helvetica, sans-serif ; color: #436d6b; font-style: italic;}
+.basico {font-family: Arial, Helvetica, sans-serif; color: #76C2BF ;}
+.intermediario {font-family: Arial, Helvetica, sans-serif; color: #548f8d ;}
+.avançado {font-family: Arial, Helvetica, sans-serif; color: #427270 ;}

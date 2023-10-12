@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tourney:wght@700&display=swap');
+
+@font-face {
+    font-family: chunky ;
+    src: url("CHUNKY HEART DECORATIVE.otf")format("truetype");
+}
+body {
+    font-family: 'Pacifico', cursive;
+text-align: justify;
+background-image: linear-gradient(to right, #77494c, #ffa7b7 );
+
+
+
+
+}
+
+main
+ { background-color: white;
+    border-radius: 10px; /* isso modula a bora do quadro*/
+width: 700px; /* width regula a largura do quadro*/
+padding: 20px; /* isso regula a berada do quadro*/
+box-shadow: 10px 10px 10px rgb(51, 15, 136); /* isso faz uma borda no quadro baixo, lado, e espalhamento */ }
+
+div > p {display: none;}
+
+div:hover > p {display: block;
+    font-family: chunky ; color: #E94900; text-align: center; text-shadow: 2px 2px 3px #a93600; }
+
+
+h1 {font-family: chunky ; color: #E94900; text-align: center; text-shadow: 2px 2px 3px #a93600; }

@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martian+Mono:wght@200&family=Rubik&family=Secular+One&family=Tourney:wght@700&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url('../fontes/idroid.otf'); /*pra conseguir usar a fonte estando em pacote use ..*/
+    font-weight: normal; 
+}
+
+/*usa :root para decidir os padrao de cores e fontes que ira usar */
+:root {
+    --cor0: #14ffeb46;
+    --cor1: #00F5E0;
+    --cor2: #01DBC8;
+    --cor3: #00B5A6;
+    --cor4: #00756C;
+    --cor5: #00554c;
+    --corbranca: white;
+    --corpreta: black;
+
+
+    --fonte-android: Android, Cursive;
+    --fonte-padrao: arial, verdana, helvetica, sans-serif
+    --fonte-android: Android, Cursive;
+    --fonte-detaque: 'Bebas Neue', sans-serif;
+   
+
+    }
+
+    *{
+margin: 0px;
+padding: 0px;
+
+    }
+
+
+
+
+body {background-color: var(--cor0);
+font-family: var(--fonte-padrao);
+
+}
+
+a.externo::after {
+    content: '\000A0\1F517' ; /*::after faz vc poder colocar algo na frente */
+
+    /*usando o codigo \000A0 faz afasta a figurinha */
+
+
+}
+
+header {background-image: linear-gradient(to bottom, #00B5A6, #00756C);
+min-height: 150px; /*configurando a altura do cabeçalho */
+text-align: center; /* Centralizando o conteudo do cabeçalho */
+font-family: var(--fonte-detaque);
+padding-top: 40px; /* essa configuração esta fazendo a parte do cabeçalho ficar no meio */
+
+
+
+
+}
+
+header > h1 {color: var(--corbranca);
+    font-family: var(--fonte-detaque);
+    margin-bottom: 20px; /* essa css esta fazendo o h1 do cabeçalho se afastar do paragrafo com margin */
+    font-size: 3em;
+    text-shadow: 5px 4px 0px rgb(0 0 0 / 32%);
+}
+header > p {color: var(--corbranca);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.2em;
+max-width: 700px; /*esta sendo usado para da um limite para o paragrafo */
+padding-left: 10px; /* conjunto de padding esta sendo usado para afastar o conteudo do cabeçalho da parede */
+padding-right: 10px;
+margin: auto; 
+text-shadow: 2px 2px 0px rgb(0 0 0 / 32%);
+
+
+}
+
+nav {background-color: #00756C;
+padding: 10px;
+box-shadow: 5px 4px 0px rgba(0, 0, 0, 0.041);
+}
+
+nav > a {
+color: white;
+padding: 10px;
+text-decoration: none;
+font-weight: bold; /*isso mexe na grossura da fonte*/
+transition-duration: 1s; /*Isso faz o quadrado formado no link desaparecer so depois de 1 segundo */
+
+}
+
+Nav > a:hover {
+background-color: var(--cor3);
+color: #006159;
+border-radius: 10px;
+
+
+}
+
+main {background-color: var(--corbranca);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; /* usado sempre para centralizar o conteudo */
+    margin-bottom: 40px;
+    padding: 20px; /*padding aqui esta separando o texto da borda do site */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.39);
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;   /* essa tag em conjunto e usada para arredondar apenas a parte de baixo */
+}
+
+main h1 { 
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+
+}
+
+main h2 {font-family: var(--fonte-android);
+color: var(--cor4);
+background-image: linear-gradient(to right, #00f5e1a6, transparent ); /* faz um gradient de uma cor a transparente */
+text-indent: 8px;
+
+}
+
+main p {
+    margin: 15px 0px; /*isso esta afastando as linhas dos paragrafos dos h1 h2 imagem */
+    text-align: justify; /* isso ajeita as palavras */
+    text-indent: 30px; /*esse css ajusta os espaços nos paragrafos */
+    line-height: 2em; /* isso configura os espaços de uma linha para outra */
+    font-size: 1em; 
+    
+}
+
+main strong {
+color: var(--cor4);
+text-shadow: 0px 0px 1px black;
+font-weight: bold;
+padding: 1px 3px;
+
+}
+
+main a {
+    text-decoration: none; /*tira o traço de debaixo do link */
+    font-weight: bolder;
+   color: white;
+    background-color: #009488;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+main a:hover {
+    text-decoration: underline; /* faz aparecer a linha quando passa o mouse no link */
+    color: #003631;
+}
+
+
+
+main img {width: 100%;} /* usar sempre em imagens para ele ir se adptando a pagina */
+main img.pequena {
+   /* width: 50%; limita a imagem a 50%*/ 
+   max-width: 350px;
+    display: block; /* essa e a configuração usada para centralizar uma imagem, diplay: block sequido de magin:auto */
+    margin: auto;
+}
+
+div.video {background-color: var(--cor4);
+ /*margin-bottom: 30px; para distanciar o video da lista */
+ margin: 0px -20px 30px -20px;  /* foi usado para deixar o quadro do video na linha do main */
+ padding-bottom: 50%;
+ position: relative;
+ 
+
+} 
+
+div.video > iframe {position: absolute; /*isso deixou o video flutuando no site */
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;  /* essa configuração foi usada para centralizar o video
+
+
+
+
+} 
+
+
+
+
+
+
+aside { background-color: var(--cor2) ;
+    border-radius: 10px;
+    padding: 10px; /* isso fez o espaçamento do quadro para letras */
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.164);
+    
+
+}
+    
+
+
+aside > ul {
+    list-style-position: inside; /* isso faz a numeração ficar pra dentro */
+    columns: 2;
+    list-style-type: '\2705\00A0' /*escolha no emogipedia o codigo, depois use \00A0 PARA AUMENTAR a distancia */
+
+
+}
+
+aside > h3 {background-color: var(--cor4);
+color: white;
+border-radius: 10px 10px 0px 0px;
+margin: -10px -10px 0px -10px;
+padding: 10px;} /* essa margin negativa esta sendo usada para aproximar o h3 do div asid */
+
+
+footer {background-color: var(--cor5);
+    color: var(--corbranca);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+footer > p > a {color: #b2dddaec;
+    text-decoration: none;
+
+}
+
+
+
+

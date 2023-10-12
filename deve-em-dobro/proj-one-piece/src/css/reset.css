@@ -1,0 +1,7 @@
+* {
+margin: 0; /*isso meche na margen */
+padding: 0; /* isso meche no padding */
+box-sizing: border-box; /* pesquisar sobre box sizing */
+
+}
+ul {list-style: none;} /* isso meche na lista none tita as bolinhas ou numeração

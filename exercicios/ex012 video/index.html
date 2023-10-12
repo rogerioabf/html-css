@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    <video src="videos/video mkv.webm" width="500" controls></video> <!--esse é o jeito mais simples de colocar tag video + width que significa o tamanho que o video vai ficar no site, e controls pro video carregar-->
+
+    <h1>Ultilizando source</h1>
+
+        <video width="500" poster="foto.png" controls autoplay loop> <!--posters coloca uma foto no inicio do video-->
+
+            <source src="videos/mkv.mkv" type="video/mkv">
+            <source src="videos/video mkv.webm" type="video/webm">
+            <source src="videos/mp4.mp4" type="video/mp4">
+            <source src="videos/WhatsApp-Video-2023-09-18-at-06.19.25.ogv" type="video/ogv">
+<!--Fazer a tag de so video-video depois adicionar no source do mais baixo em mbs pra cima use controls pro videos dar play e width pra diminuir o tamanho do video no site-->
+
+
+            <p>Seu navegador não tem compatibilidade com a reprodução de video. </p>
+    
+    
+      </video>
+
+      <h1>Inserindo videos do youtube</h1>
+     
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=jBXnzY-RtmzcAzxN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  <!--clicar em compartilha no youtube e encoporar para montar o codigo html-->
+    
+</body>
+</html>
