@@ -1,0 +1,34 @@
+@charset "UTF-8"; 
+
+
+
+body {}
+
+:root { --cor01: #D6ACF2;
+        --cor02: #D285F2;
+        --cor03: #A455D9;
+        --cor04: #3B2E62;
+        --cor05: #151426;
+        --cor06: #fc5757;
+
+}
+
+body {background-color: rgb(188, 214, 238);
+font-family: Arial, Helvetica, sans-serif;}
+
+main {background-color: white;
+min-width: 300px;
+max-width: 1000px;
+margin: auto;
+margin-bottom: 40px;
+padding: 20px;
+}
+
+
+header img {display: block;
+margin: auto;
+background-color: white;}
+
+main img {width: 100%;
+margin: auto;
+display: block;}
