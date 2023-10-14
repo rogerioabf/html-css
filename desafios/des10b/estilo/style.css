@@ -171,7 +171,7 @@ div.video {background-color: var(--cor4);
  margin: 0px -20px 30px -20px;  /* foi usado para deixar o quadro do video na linha do main */
  padding-bottom: 50%;
  position: relative;
- 
+ margin: auto;
 
 } 
 
