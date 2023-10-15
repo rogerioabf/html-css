@@ -74,3 +74,9 @@ div.video > iframe {position: absolute; /*isso deixou o video flutuando no site 
 } 
 aside {max-width: 200px;} 
 
+footer {color: white;
+text-align: center
+;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.5em;}
+
