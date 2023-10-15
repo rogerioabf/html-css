@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste de imagem de fundo</title>
+    <style>
+body {background-image: url(imagem/wallpaper001.jpg);}
+
+        div.quadrado {
+            border: 1px solid black;
+            display: inline-block; /*faz as imagens ficarem uma do lado da outra */
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 8px black;
+            background-color: blueviolet;
+        }
+
+        div#q1 {background-color: brown;}
+        div#q2 {background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.308) );}
+        div#q3 {background-image: url('imagem/wallpaper002.jpg');}
+
+    </style>
 </head>
 <body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
     
 </body>
 </html>
