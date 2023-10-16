@@ -6,9 +6,11 @@
 }
 
 
-body {background-image: url('imagem/galaxia 2.jpg');
-        background-position: left center;
-        background-size: 900px 900px;
+body {background-image: url('imagem/galaxia 4.webp');
+        background-position: top center;
+        background-size: cover;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
 font-family: Arial, Helvetica, sans-serif;}
 
 main h1 {font-family: 'jack', times;
@@ -32,7 +34,9 @@ font-size: 2em;}
 
 }
 
-body {background-color: rgb(188, 214, 238);
+body {height: 100vh;
+        
+        background-color: rgb(188, 214, 238);
 font-family: Arial, Helvetica, sans-serif;}
 
 main {background-color: white;
@@ -58,7 +62,7 @@ display: block;}
 
 
 
-div.video {background-image: url('imagem/galaxia 1.png');
+div.video {background-image: url('imagem/galaxia 5.webp');
  /*margin-bottom: 30px; para distanciar o video da lista */
  margin: 0px -20px 30px -20px;  /* foi usado para deixar o quadro do video na linha do main */
  padding-bottom: 50%;
