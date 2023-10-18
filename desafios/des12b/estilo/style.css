@@ -82,9 +82,10 @@ background-size: cover;}
 
 
 
-footer {background-color: black;
+footer {background-color: rgb(0, 0, 0);
 text-align: center;
 padding: 10px;
+color: white;
 }
 
 
