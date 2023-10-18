@@ -33,6 +33,7 @@ header > h1 {
     /* text-transform:uppercase; faz todas as letras ficarem maiusculas */
     font-family: var(--fonte2);
     font-size: 10vw; /*isso faz a largura da escrita se adaptar conforme a tela aumente ou diminua */
+    
     }
 header > p {padding-bottom: 50px;} /* usando paddin bottom e top 50% vc deixa o h1 totalmente no meio */
 
