@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title> <!--semantica da tabela-->
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        .trr {border: 1px solid black;
+            background-color: brown;
+            color: white;
+        }
+
+        table {border-collapse: collapse;}
+        td {border: 1px solid black;
+        width: 8;
+        position: relative;
+       
+    
+    }
+
+    thead > tr > th { 
+        position: sticky;
+        top: -1px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+
+
+    } /*isso faz o titulo ficar colado em cima */
+
+        caption {background-color: black;
+        color: white;}
+
+        th {border: 1px solid black;
+        width: 8;}
+
+        .tdd {text-align: center;}
+
+        tbody > tr:nth-child(even) {background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);} /* even isso configura as linhas pares */
+
+        tbody > tr:nth-child(odd) {background-color: rgba(0, 0, 0, 0.527);
+        color: white;}  /* essa tag :nth-child faz o efeito zebrado
+        usando 2n faz ficar um sim um não, usando odd começa pelas impar */
+
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr class="trr">
+                <th scope="col">paulista</th>
+                <th scope="col" style="width: 200px;">Clubes Paulistas</th> <!--th é um titulo coloque scope=col se for na mesmo coluna-->
+                <th scope="col">Brasileiros</th>
+                <th scope="col">Copa do Brasil</th>
+                <th scope="col">Sulamericana</th>
+                <th scope="col">Libertadores</th>
+                <th scope="col">Mundial</th>
+                
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr class="tdd">
+                <td>Sao Paulo</td>
+                <td>22</td>
+                <td>6</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+                <td>3</td>
+               
+
+            </tr>
+            <tr class="tdd">
+                <td>Palmeiras</td>
+                <td>25</td>
+                <td>11</td>
+                <td>4</td>
+                <td>0</td>
+                <td>1</td>
+                <td>ahhaah</td>
+            </tr>
+            <tr class="tdd">
+                <td>Corinthians</td>
+                <td>30</td>
+                <td>7</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr class="tdd">
+                <td>Santos</td>
+                <td>22</td>
+                <td>8</td>
+                <td>1</td>
+                <td>0</td>
+                <td>3</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>flamengo</td>
+                <td></td>
+                <td>7</td>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Cruzeiro</td>
+                    <td></td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Gremio</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <th scope="row">Total</th> <!--quando o scop ta to lado fica row-->
+                <td>caculando</td>
+                <td>caculando</td>
+                <td>caculando</td>
+                <td>caculando</td>
+                <td>caculando</td>
+                <td>caculando</td>
+                
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <caption>Palmeiras não tem Mundial</caption>
+        </tfoot>
+
+
+
+
+
+    </table>
+    
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis veritatis quia suscipit, ab harum in nobis enim, ipsa cumque maiores inventore voluptatem accusantium accusamus quis pariatur minima ratione eligendi autem.,
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos neque asperiores unde id corporis doloremque maiores, fugiat amet tenetur eligendi, eius nihil ex illo harum quos exercitationem assumenda ab accusantium.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quasi nostrum facilis laboriosam praesentium officiis, illum esse fuga possimus ex aut iure. Nostrum dignissimos rerum culpa aut autem ducimus quam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint neque modi maiores facere culpa placeat maxime a voluptatibus corrupti quam aliquam quas libero officiis delectus sit totam inventore esse.
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse necessitatibus, officia eius illum voluptatum repellendus mollitia. Sequi, deleniti! Totam suscipit blanditiis corrupti, maxime distinctio fugiat delectus voluptate facere incidunt deserunt.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis veritatis quia suscipit, ab harum in nobis enim, ipsa cumque maiores inventore voluptatem accusantium accusamus quis pariatur minima ratione eligendi autem.,
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos neque asperiores unde id corporis doloremque maiores, fugiat amet tenetur eligendi, eius nihil ex illo harum quos exercitationem assumenda ab accusantium.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quasi nostrum facilis laboriosam praesentium officiis, illum esse fuga possimus ex aut iure. Nostrum dignissimos rerum culpa aut autem ducimus quam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint neque modi maiores facere culpa placeat maxime a voluptatibus corrupti quam aliquam quas libero officiis delectus sit totam inventore esse.
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse necessitatibus, officia eius illum voluptatum repellendus mollitia. Sequi, deleniti! Totam suscipit blanditiis corrupti, maxime distinctio fugiat delectus voluptate facere incidunt deserunt.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis veritatis quia suscipit, ab harum in nobis enim, ipsa cumque maiores inventore voluptatem accusantium accusamus quis pariatur minima ratione eligendi autem.,
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos neque asperiores unde id corporis doloremque maiores, fugiat amet tenetur eligendi, eius nihil ex illo harum quos exercitationem assumenda ab accusantium.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quasi nostrum facilis laboriosam praesentium officiis, illum esse fuga possimus ex aut iure. Nostrum dignissimos rerum culpa aut autem ducimus quam!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sint neque modi maiores facere culpa placeat maxime a voluptatibus corrupti quam aliquam quas libero officiis delectus sit totam inventore esse.
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse necessitatibus, officia eius illum voluptatum repellendus mollitia. Sequi, deleniti! Totam suscipit blanditiis corrupti, maxime distinctio fugiat delectus voluptate facere incidunt deserunt.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse necessitatibus, officia eius illum voluptatum repellendus mollitia. Sequi, deleniti! Totam suscipit blanditiis corrupti, maxime distinctio fugiat delectus voluptate facere incidunt deserunt.
+
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse necessitatibus, officia eius illum voluptatum repellendus mollitia. Sequi, deleniti! Totam suscipit blanditiis corrupti, maxime distinctio fugiat delectus voluptate facere incidunt deserunt.
+
+
+    
+</body>
+</html>
