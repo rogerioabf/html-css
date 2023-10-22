@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas colgroup</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        table {width: 500px;
+        border-collapse: collapse;}
+
+        td, th {border: 1px solid black;}
+
+        col.coln, col.cols {background-color: rgb(218, 218, 218);} /*isso pode ser usado para colorir mais de uma coluna */
+
+        col.cgrupo {background-color: aqua;} /* <!--com isso da pra configurar 2 ou até mais colunas por vez --> */
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercicios de Tabela</h1>
+    <table>
+        <colgroup> <!--essa configuração é usada para configurar uma coluna interira-->
+            <col class="coln">
+            <col class="cols"> 
+            <col class="cgrupo" span="2"> <!--com isso da pra configurar 2 ou até mais colunas por vez -->
+           
+        
+        
+        </colgroup>
+
+
+
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Rogerio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Operador /M</td>
+        </tr>
+        <tr>
+            <td>Luana</td>
+            <td>F</td>
+            <td>31</td>
+            <td>Central</td>
+        </tr>
+        <tr>
+            <td>Careca</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Empresario</td>
+        </tr>
+        <tr>
+            <td>Michel</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Ex Design</td>
+        </tr>
+    </table>
+
+        
+
+    
+
+    
+</body>
+</html>
