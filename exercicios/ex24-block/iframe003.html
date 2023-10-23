@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+
+        iframe#tela {width: 95vw;
+        height: 400px;
+    border: 2px solid rgba(0, 0, 0, 0.425);
+border-radius: 10px;
+box-shadow: 2px 2px 0px black;}
+
+img {width: 100px;
+height: 200px;}
+
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maxime culpa doloremque facilis sapiente aliquid nobis. Aperiam adipisci sequi, eveniet, ad neque, officiis necessitatibus error nisi accusamus dolores architecto possimus!</p>
+
+    <ul>
+        <li> <a href="pagextra/pag001.html" target="flow">Primeira pagina </a> </li>
+        <li> <a href="pagextra/pag002.html" target="flow">Segunda pagina </a> </li>
+        <li> <a href="pagextra/pag003.html" target="flow">terceira pagina </a> </li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente tempora reiciendis omnis quis ea perferendis, atque voluptates commodi minima mollitia repellat neque totam cumque dicta! Aliquid unde reiciendis velit fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. In consectetur dolores dolor illo, adipisci maiores asperiores! Porro libero error, architecto, necessitatibus magnam ducimus facilis eos sunt delectus ex vitae harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto cupiditate reprehenderit alias eveniet molestias accusamus, obcaecati maiores similique soluta, vel commodi ipsum. </p>
+
+    <iframe id="tela" name="flow" srcdoc="<h1>Escolha uma das opçoes</h1><img src='cursoemvideo.png'>" > <!--a tag srcdoc faz aparecer um tag dentro do iframe--> 
+        
+        <!--praconseguir colocar uma imagem dentro da tag tem que fazer dessa forma-->
+        <p>Infelizmente seu navegador não é compativel com isso. </p>
+
+
+    </iframe> <!--faça o iframe coloque name e escolha jogue na pagina lincada para fazer aparecer o site no quadro feito nessa tag-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aperiam minima quo est amet sequi, rem, mollitia pariatur beatae odit nobis error inventore veritatis quam debitis et laudantium quia sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error consequatur impedit, officiis quod repellat minus voluptatum alias cupiditate dolore cum enim possimus quos nesciunt numquam doloribus est, aperiam unde!</p>
+
+    <img src="cursoemvideo.png" alt="">
+
+    
+</body>
+</html>
