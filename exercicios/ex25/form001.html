@@ -13,12 +13,17 @@
 
 
       <!--action=cadastro leva seu formulario para outra linguagem-->
-    <form action="cadastro.php" autocomplete="off"> <!--essa tag autoconpleteoff serve pra nao ficar salvando os dados-->
+    <form action="cadastro.php" method="get" autocomplete="off"> <!--essa tag autoconpleteoff serve pra nao ficar salvando os dados-->
         <p><label for="inome">Nome:</label> <input type="text" name="Nome" id="inome"></p> <!--essa tag input=type=text serve para voce fazer o quadro pro poder preencher o formulario-->
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"> </p>
         <p><input type="submit" value="Enviar"></p>  <!--input type=submit serve pra fazer aparecer a tecla enviar-->
 
         <!--o name é mais util para php e html e id é mais ultil para Java-->
+
+        <!---a tag method=get deixa os arquivis colocados no formulario vizivel na url -->
+
+        <!--a tag method=post esconde da url mais continua dando pra insoecionar-->
+
 
         hiran arma
 

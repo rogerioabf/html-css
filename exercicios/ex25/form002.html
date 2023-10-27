@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--o autrocomplete é a gravação do que vc ja digitou dento do formulario-->
+        <p><label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="8"
+            maxlength="30" size="15" placeholder="ex: rogerouu" autocomplete="username">
+
+
+        
+         </p>
+         <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8"
+            maxlength="15" size="15" placeholder="ex: senha 8
+             dig
+            " autocomplete="current-password"> <!--a tag imput seguida de password faz configuração de mensagem escondida senha-->
+
+            <!--current-password é sobre sua senha atual-->
+             <!--new-password é sobre sua senha atual-->
+
+         </p>
+
+         <p><input type="submit" value="Enviar"></p>
+         <input type="reset" value="Apagar"> <!--isso faz apagar oque vc escreveu no formulario-->
+
+         <!--required minlegth diz o minimo de de digitos na sua senha -->
+          <!--  required maxlegth diz o maximo de digitos da sua senha -->
+             <!--seze configura o tamanho da caixa no formulario --> 
+             <!--placeholder deixa um exemplo dentro da caixa-->
+
+
+
+    </form>
+    
+</body>
+</html>
