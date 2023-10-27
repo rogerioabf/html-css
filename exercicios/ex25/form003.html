@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario003</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+   <form action="cadastro.php" method="get" autocomplete="on">
+
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="Nome" id="inome" required maxlength="30" minlength="20" placeholder="nome completo" autocomplete="name" >
+
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Apagar">
+
+
+    </p>
+    <label for="imes">periodo letivo</label> 
+    <input type="month" name="mes" id="imes" value="2020-07"> <!--a tag type month faz uma configuração de mes -->
+
+    <!--com value foi ja colocado na caixa a data 7/2020-->
+
+    <p>
+        <label for="idia">Dia da Prova</label>
+        <input type="date" name="dia" id="idia" value="2020-07-10" > <!--com o input date da pra fazer uma data completa ex: 10/03/1998-->
+
+    </p>
+
+    <p>
+        <label for="ihora">Horario da prova</label>
+        <input type="time" name="hora" id="ihora" value="10:20"> 
+        <!--essa tag input time faz uma configuração de horario-->
+
+
+    </p>
+
+
+
+    <p>
+        <label for="imedia">Média</label>
+        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required> <!--min e max é pra ser usado em coisas como nota coisas numerais-->
+
+        <!--tag step faz poder usar 0.5 1.5, configuraçoes diferentes-->
+
+        <!--a tag required faz ser obrigatorio preencher o formulario-->
+    </p>
+
+
+   </form>
+    
+</body>
+</html>
