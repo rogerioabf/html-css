@@ -15,104 +15,151 @@
         Cadastre-se aqui!!!
     </h1>
 
-    <form action="index.php" method="get" autocomplete="on">
+    <form action="index.php" method="post" autocomplete="on">
 
-        <p><label for="anome">Nome:</label> <input type="text" name="Nome" required maxlength="15" min="5" placeholder="Rogerio" size="15" autocomplete="username"> </p>
+        <fieldset>
+            <legend><strong>Envie seu documentos</strong></legend>
+            <label for="r">Foto do RG</label>
+            <input type="file" name="foto" id="r"> <br>
 
-        <p><label for="anome">Sobrenome:</label> <input type="text" name="Sobrenome" required maxlength="15" minlength="5" placeholder="Ferreira" size="10"> </p>
+            <label for="c">Certidão de nascimento</label>
+            <input type="file" name="foto" id="c"> <br>
 
-        <p><label for="anome">Cep:</label> <input type="text" name="Nome" required maxlength="15" minlength="5" placeholder="08883080" size="18" > </p>
+            <label for="h">Habilitação</label>
+            <input type="file" name="Foto" id="h"> <br>
 
-        <p><label for="anome">Rua:</label> <input type="text" name="Rua" required maxlength="15" minlength="5" placeholder="Rua formozinha " size="18"> </p>
+            <label for="his">Historico Escolar</label>
+            <input type="file" name="foto" id="his"> <br>
 
-        <p><label for="anome">Bairro:</label> <input type="text" name="Bairro" required maxlength="15" minlength="5" placeholder="Vila madame" size="16"> </p>
 
-        <p><label for="anome">Numero:</label> <input type="text" name="Numero" required maxlength="15" minlength="1" placeholder="10000" size="14"> </p>
-        
-        <p><label for="anome">Celular:</label> <input type="text" name="Celular" required maxlength="15" minlength="5" placeholder="11954102930" size="15"> </p>
 
-        <p>
-            <label for="idia">Data de nascimento</label>
-            <input type="date" name="dia" id="idia" required >
-        </p>
+        </fieldset>
 
-        <p>
-            <label for="ihora">Hora do nascimento</label>
-            <input type="time" name="hora" id="ihora" required>
-        </p>
+
+
+
+
+        <fieldset>
+            <legend><strong>Dados Pessoais</strong></legend>
+
+
+            <p><label for="inome">Sexo</label>
+                <input type="radio" name="sexo" id="masc"> <label for="mas">masculino</label>
+                <input type="radio" name="sexo" id="femi" > <label for="femi">Feminino</label>
+            
+            </p>
+
+
+
+            <p><label for="anome">Nome:</label> <input type="text" name="Nome" required maxlength="15" min="5" placeholder="Rogerio" size="15" autocomplete="username"> </p>
+            <p><label for="anome">Sobrenome:</label> <input type="text" name="Sobrenome" required maxlength="15" minlength="5" placeholder="Ferreira" size="10"> </p>
+            <p><label for="anome">Cep:</label> <input type="text" name="Nome" required maxlength="15" minlength="5" placeholder="08883080" size="18" > </p>
+            <p><label for="anome">Rua:</label> <input type="text" name="Rua" required maxlength="15" minlength="5" placeholder="Rua formozinha " size="18"> </p>
+            <p><label for="anome">Bairro:</label> <input type="text" name="Bairro" required maxlength="15" minlength="5" placeholder="Vila madame" size="16"> </p>
+            <p><label for="anome">Numero:</label> <input type="text" name="Numero" required maxlength="15" minlength="1" placeholder="10000" size="14"> </p>
+            
+            <p><label for="anome">Celular:</label> <input type="text" name="Celular" required maxlength="15" minlength="5" placeholder="11954102930" size="15"> </p>
+            <p>
+                <label for="idia">Data de nascimento</label>
+                <input type="date" name="dia" id="idia" required >
+            </p>
+            <p>
+                <label for="ihora">Hora do nascimento</label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Apagar">
+        </fieldset>
+
+       
 
         <h1>Médias na Escola</h1>
 
-        <ul>
+        <fieldset>
+            <legend><strong>Aprovado com nota acima de 7,0</strong></legend>
 
             <p>
                 <label for="imes"><strong>Ultimo periodo letivo cursado</strong></label>
                 <input type="month" name="mes" id="imes" required>
-
               </p>
-            
-                
-                    <li>
-                        <label for="imedia">Média de portugues</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    <li>
-                        <label for="imedia">Média de Matematica</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    <li>
-                        <label for="imedia">Média de Geografia</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    <li>
-                        <label for="imedia">Média de Ed. Fisica</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    <li>
-                        <label for="imedia">Média de Historia</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    <li>
-                        <label for="imedia">Média de Ingles</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    <li>
-                        <label for="imedia">Média de Filosofia</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    <li>
-                        <label for="imedia">Média de Quimica</label>
-                        <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
-                    </li>
-
-                    
-                
-
-
-
-
-
-
-
-            
-        </ul>
-
-
-
-
-
         
 
+
+
+
+            <ul>
+                
+            
+                        <li>
+                            <label for="imedia">Média de portugues</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+                        <li>
+                            <label for="imedia">Média de Matematica</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+                        <li>
+                            <label for="imedia">Média de Geografia</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+                        <li>
+                            <label for="imedia">Média de Ed. Fisica</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+                        <li>
+                            <label for="imedia">Média de Historia</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+                        <li>
+                            <label for="imedia">Média de Ingles</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+                        <li>
+                            <label for="imedia">Média de Filosofia</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+                        <li>
+                            <label for="imedia">Média de Quimica</label>
+                            <input type="number" name="media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+                        </li>
+            
+            
+            
+            </ul>
+            
+                 <input type="submit" value="Enviar">
+                 <input type="reset" value="Apagar">
+        </fieldset>
+
+        <h1>Pesquisa de satisfação com o ensino</h1>
+
     
-             <input type="submit" value="Enviar"> 
-             <input type="reset" value="Apagar">
+
+        <fieldset>
+            <legend><strong>De 0 a 10 Qual nota você defino o seu aproveitamento no ano</strong></legend>
+
+            <ul>
+                <li><label for="um">1</label><input type="checkbox" name="u" id="um"></li>
+                <li><label for="dois">2</label><input type="checkbox" name="d" id="dois"></li>
+                <li><label for="tres">3</label><input type="checkbox" name="t" id="tres"></li>
+                <li><label for="quatro">4</label><input type="checkbox" name="q" id="quatro"></li>
+                <li><label for="cinco">5</label><input type="checkbox" name="c" id="cinco"></li>
+                <li><label for="seis">6</label><input type="checkbox" name="s" id="seis"></li>
+                <li><label for="sete">7</label><input type="checkbox" name="s" id="sete"></li>
+                <li><label for="oito">8</label><input type="checkbox" name="o" id="oito"></li>
+                <li><label for="nove">9</label><input type="checkbox" name="n" id="nove"></li>
+                <li><label for="dez">10</label><input type="checkbox" name="d" id="dez"></li>
+                
+                
+            </ul>
+
+            <input type="submit" value="Avalie">
+            <input type="reset" value="Apagar">
+
+
+        </fieldset>
+
 
         
         

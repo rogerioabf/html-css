@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario005</title>
+</head>
+<body>
+    <h1>Exemplo de formulação</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        
+
+    
+        <fieldset>
+
+
+
+
+
+
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc"> <label for="masc">Masculino</label><!--pra dar certo o name dos dois inputs deve ser igual-->
+            <input type="radio" name="sexo" id="femi"> <label for="femi">Feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+
+
+        <legend>Esportes Favoritos</legend> 
+        <input type="checkbox" name="esfut" id="infut" required > <label for="infut" >Futebol</label> <br> <!--a tag checkbox faz uma configuração enquete-->
+
+
+        <input type="checkbox" name="esbas" id="isbas" required > <label for="isbas">Basquete</label> <br>
+
+
+        <input type="checkbox" name="esna" id="isna" required checked><label for="isna"> Natação</label> <br> <!--a tag checked faz a opção ja aparecer marcada-->
+
+
+        <input type="checkbox" name="este" id="iste" required> <label for="iste">Tenis</label> <br> 
+
+
+
+    </fieldset>
+
+
+
+    <p>
+        <input type="submit" value="encaminhar">
+        <input type="reset" value="eraser">
+    </p>
+
+    
+
+</form>
+    
+</body>
+</html>
