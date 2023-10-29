@@ -53,6 +53,19 @@
 
             <p><label for="anome">Nome:</label> <input type="text" name="Nome" required maxlength="15" min="5" placeholder="Rogerio" size="15" autocomplete="username"> </p>
             <p><label for="anome">Sobrenome:</label> <input type="text" name="Sobrenome" required maxlength="15" minlength="5" placeholder="Ferreira" size="10"> </p>
+
+            <label for="cid">Estado:</label>
+            <select name="Cidade" id="cid">
+                <option value="Dia">Diadema</option>
+                <option value="SBC">Sao Bernardo do Campo</option>
+                <option value="Sao">São Caetano</option>
+                <option value="San">Santo Andre</option>
+                <option value="Mau">Maua</option>
+                <option value="Ita">Itapecerica</option>
+            </select>
+
+
+
             <p><label for="anome">Cep:</label> <input type="text" name="Nome" required maxlength="15" minlength="5" placeholder="08883080" size="18" > </p>
             <p><label for="anome">Rua:</label> <input type="text" name="Rua" required maxlength="15" minlength="5" placeholder="Rua formozinha " size="18"> </p>
             <p><label for="anome">Bairro:</label> <input type="text" name="Bairro" required maxlength="15" minlength="5" placeholder="Vila madame" size="16"> </p>
@@ -68,8 +81,37 @@
                 <input type="time" name="hora" id="ihora" required>
             </p>
 
-            <input type="submit" value="Enviar"> 
-            <input type="reset" value="Apagar">
+            <p>
+                <label for="iprof">Ultima Profissão</label>
+
+                <input type="text" name="Prof" id="iprof" list="prof">
+                <datalist id="prof">
+                    <option value="Prof">Professor</option>
+                    <option value="Adm">Administração</option>
+                    <option value="Med">Medicina</option>
+                    <option value="Dev">Desenvolvedor</option>
+                    <option value="Den">Dentista</option>
+                    <option value="fut">Jogador de Futenol</option>
+                
+                </datalist>
+
+               
+
+                 
+                    
+            </p><br>
+
+            <p><label for="po"><strong>Fala sobre Você</strong></label></p><br>
+            <textarea name="msg" id="imsg" cols="50" rows="10"></textarea>
+
+
+
+
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </p>
         </fieldset>
 
        
@@ -159,6 +201,8 @@
 
 
         </fieldset>
+
+        
 
 
         

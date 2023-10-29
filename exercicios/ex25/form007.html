@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularioc</title>
+    <title>Formulario 007</title>
 </head>
 <body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        
+
+        <p>
+            <label for="iest">Estado:</label><br>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste"> <!--com isso vc faz um titulo em cima das escolhas-->
+                    <option value="SP">Sao Paulo</option> <!--Com opition vc faz as palavras para o selecionador-->
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernanbuco</option>
+                </optgroup>
+
+
+            </select>
+
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label><br>
+            <input type="text" name="Prof" id="iprof" list="prof">
+            <datalist id="prof">
+                <option value="Prof">Professor</option>
+                <option value="Adm">Administração</option>
+                <option value="Med">Medicina</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Den">Dentista</option>
+                <option value="fut">Jogador de Futenol</option><br>
+            
+            </datalist>
+        </p>
+
+            
+
+
+        <p>
+            <label for="imsg">Mensagem</label><br> <!--rons é linha-->
+            <textarea name="msg" id="imsg" cols="35" rows="15" placeholder="Vamboooooooraaaaaa"></textarea> <!--com a tag textarea voce faz uma caixa de texto-->
+        </p>
+
+
+       
+
+
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Del">
+        </p>
+    
+
+
+
+
+
+
+    </form>
     
 </body>
 </html>
