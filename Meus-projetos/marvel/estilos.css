@@ -8,7 +8,7 @@ body {
 }
 
 .container { display: inline-flex;
-    max-width: 800px;}
+    max-width: 500px;}
 
     .container img {
         margin-right: 20px;
