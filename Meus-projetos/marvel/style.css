@@ -21,7 +21,7 @@ color: #391a46;}
 main h2 {font-family: 'jack', times;
 font-size: 2.0em;
 background-image: linear-gradient(to right, #D6ACF2, transparent);
-padding: 0px 0px 0px 5px;
+
 border-radius: 5px;
 color: #503366;}
 
@@ -110,23 +110,23 @@ columns: 1;
 
 a {
        text-decoration: none; 
-       color: #ffffff;
+       color: #391a46;
        
        
 }
  
 a:hover {
       
-        color: #D6ACF2;
+        color: #9c2a2f;
 
         
 }
 
 h4 {
-        background-image: linear-gradient(to right, #503366, transparent);
+        background-image: linear-gradient(to right, #8d5ab4, transparent);
         border-radius: 5px;
-        margin: 20px -149px 20px 0px;
-        padding: 0px 0px 0px 10px;
+        
+        
        
 
         
