@@ -103,26 +103,5 @@ word-wrap: break-word;
 columns: 1;
 
 }
-
-a {
-       text-decoration: none; 
-       
-}
  
-a:hover {
-        color:  var(--cor04);
-        margin: 2px;
-        
-       
-}
-
-h4 {
-        background-image: linear-gradient(to right, #D6ACF2, transparent);
-        border-radius: 5px;
-        
-        
-
-}
-
-
 
