@@ -24,3 +24,30 @@ body {
     columns: 1;
 
     }
+
+    h2 {
+        font-family: 'jack', times;
+    font-size: 2.0em;
+    background-image: linear-gradient(to right, #D6ACF2, transparent);
+    
+    border-radius: 5px;
+    color: #503366;
+    }
+    
+    a {
+        font-family: 'jack', times;
+    
+    background-image: linear-gradient(to right, #D6ACF2, transparent);
+    
+    border-radius: 5px;
+    color: #503366;
+    
+    
+    }
+    
+    a:hover {
+          
+        color: #9c2a2f;
+    
+        
+    }
