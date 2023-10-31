@@ -1,0 +1,24 @@
+body {
+    width: 85vw;
+    height: 85vh;
+    padding: auto;
+    margin: auto;
+}
+
+.container { display: inline-flex;
+    max-width: 800px;}
+
+    .container img {
+        margin-right: 20px;
+        
+      
+        
+    }
+
+    .container ul {width: 300px;
+    max-width: 300px;
+    word-wrap: break-word;
+    columns: 1;
+
+}
+
