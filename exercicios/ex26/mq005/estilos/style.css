@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #9C00C7;
+    --cor2: #7C009E;
+    --cor3: #B501DB;
+    --cor4: #550066;
+    --cor5: #33003D;
+
+
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body, html {
+    background-color: #b794be;
+    padding-bottom: 5px;
+    
+
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--cor3);
+    color: white;
+   
+    
+}
+
+
+i#bug {
+    background-color: #33003D;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+i#bug:hover {
+    
+    color: #B501DB;
+    box-sizing: border-box;
+    
+   
+    
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;  /* isso tira as bolinhas */
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration:  none;
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    border-top: 2px solid var(--cor1)
+}
+
+menu > ul > li > a:hover {
+    background-color: var(--cor1);
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+    
+    
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px; /*aumenta distancia no paragrafo */
+}
