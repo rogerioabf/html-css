@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+--------------------------------
+Pequenas telas: até 800
+tablet 768 x 1024
+laptop 1366 x 1080
+desktop 19020 x 1080 */
+
+@media screen and (min-width: 812px) {
+    i#bug {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    
+    menu > ul > li {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        
+    }
+
+    main {
+        width: 900px;
+    }
+}

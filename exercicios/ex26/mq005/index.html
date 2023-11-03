@@ -10,8 +10,9 @@
 
 
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu site</h1>
         <i id="bug" class="fa-solid fa-bars" onclick="clickMenu()"></i>
@@ -40,6 +41,28 @@
         
     </main>
     <script>
+
+        function mudoutamanho() {  /*se=if a largura da minha tela for maior ou igual=>= a 814 use block no seu itens.style.display */
+            if (window.innerWidth >= 814) {
+                itens.style.display = 'block'
+                } else { 
+                    itens.style,display = 'none'  /*se não=else no caso se for menor use itens.style.display use none
+                    intens.style.display = 'block' */
+                }
+            
+
+
+
+
+
+
+            }
+           
+        
+
+
+
+
         function clickMenu() {
             if (itens.style.display =='block') { 
                 itens.style.display = 'none'
